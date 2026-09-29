@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+  <meta name="theme-color" content="#070b1f" />
+  <meta name="description" content="NEON NEXUS — explore floating islands, collect energy, build combos and grow your futuristic island." />
+  <title>NEON NEXUS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/screens.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='30' r='24' fill='%232f8cff'/%3E%3Ccircle cx='24' cy='26' r='6' fill='white'/%3E%3Ccircle cx='40' cy='26' r='6' fill='white'/%3E%3Ccircle cx='32' cy='42' r='5' fill='%235ff6ff'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div id="app">
+    <canvas id="game-canvas" aria-label="Game world"></canvas>
+    <div id="ui-layer">
+      <div id="world-ui"></div>
+      <div id="hud" class="hud" hidden></div>
+      <header id="topbar" class="topbar" hidden></header>
+      <nav id="nav" class="nav" aria-label="Main navigation" hidden></nav>
+      <div id="panel-root"></div>
+      <div id="overlay-root"></div>
+      <div id="coach-root"></div>
+      <div id="modal-root"></div>
+      <div id="toast-root" aria-live="polite"></div>
+      <div id="joystick" class="joystick" aria-hidden="true"><div class="joy-base"></div><div class="joy-knob"></div></div>
+      <div id="fade" class="fade" aria-hidden="true"></div>
+    </div>
+    <noscript><div class="noscript">NEON NEXUS needs JavaScript enabled to play.</div></noscript>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
